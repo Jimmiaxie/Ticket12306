@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ticket_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_serach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/search_icon_gray"
+                android:hint="中文/拼音/首字母"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="16sp">
+
+            </AutoCompleteTextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_cur_city"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#f0f0f0"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="当前城市"-->
+        <!--android:textColor="#888888"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_history_city"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_cur_city"-->
+        <!--android:background="#f0f0f0"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="历史城市"-->
+        <!--android:textColor="#888888"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_show_letter"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_history_city"-->
+        <!--android:background="#f0f0f0"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="热门城市"-->
+        <!--android:textColor="#888888"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--&lt;!&ndash;<GridView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/id_recycler_grid"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/tv_show_letter"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:numColumns="3">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</GridView>&ndash;&gt;-->
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/id_recyclerview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="5dp" />-->
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <dda.com.ticket12306.view.QuickIndexBar
+            android:id="@+id/quickIndexbar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+
+</LinearLayout>
